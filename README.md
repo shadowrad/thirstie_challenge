@@ -32,3 +32,7 @@ here is an example of the object to send.
   
 For the check-in you have the endpoint PATCH http://localhost:8000/LibraryActivity/{LibraryActivityID} it will update the row with the current datetime for the check-in 
 
+## securty improvements 
+
+First use the auth django tables and add the auth token from django rest framework with this you can make use of the roles/permissions features and class managment for security 
+
