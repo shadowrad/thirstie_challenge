@@ -41,7 +41,7 @@ def relate_libraries_books():
 
 
 # Create your tests here.
-class AnimalTestCase(TestCase):
+class ActivityTestCase(TestCase):
     def setUp(self):
         create_users(3)
         create_books(3)

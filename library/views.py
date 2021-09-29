@@ -56,11 +56,11 @@ class ActivityList(APIView):
     def set_last_activity(self, library_book_id, activity):
         LibraryBook.objects.filter(pk=library_book_id).update(last_library_activity=activity)
 
-    #  todo: delete method
-    def get(self, request, format=None):
-        activty = LibraryActivity.objects.all()
-        serializer = LibraryActivitySerializer(activty, many=True)
-        return Response(serializer.data)
+    # #  todo: delete method
+    # def get(self, request, format=None):
+    #     activty = LibraryActivity.objects.all()
+    #     serializer = LibraryActivitySerializer(activty, many=True)
+    #     return Response(serializer.data)
 
     @atomic
     def post(self, request, format=None):
